@@ -1,0 +1,32 @@
+{
+  "value": "sampleModule",
+  "label": "示範模組（請改）",
+  "kind": "optional",
+  "status": "planned",
+  "description": "模組模板：克隆後依 README 檢查清單改 value／routes／權限即可開始實作。",
+  "href": "",
+  "contractVersion": 1,
+  "minHostVersion": "0.389",
+  "author": {
+    "author": "你的名字",
+    "authorUrl": "",
+    "version": "0.1.0",
+    "releasedAt": ""
+  },
+  "provides": { "student": false, "parent": false, "staff": true, "admin": true },
+  "routes": [
+    { "kind": "page", "path": "/admin/sample-module" },
+    { "kind": "page", "path": "/student/sample-module" },
+    { "kind": "api", "path": "/api/sample-module" },
+    { "kind": "api", "path": "/api/admin/sample-module" }
+  ],
+  "permission": { "mode": "new", "value": "sampleModule", "category": "校務資料" },
+  "rateLimits": [
+    { "key": "SAMPLE_MODULE_LIST", "limit": 120, "windowMs": 60000 },
+    { "key": "SAMPLE_MODULE_MUTATE", "limit": 20, "windowMs": 60000 }
+  ],
+  "auditActions": ["sample_module_recorded", "sample_module_updated"],
+  "dataCollections": ["sampleEvents"],
+  "hooks": ["announcements", "calendar"],
+  "keywords": ["範例"]
+}

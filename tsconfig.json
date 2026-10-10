@@ -1,0 +1,5 @@
+{
+  "extends": "module-sdk/tsconfig.shadow.json",
+  "include": ["**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
+}

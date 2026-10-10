@@ -1,0 +1,11 @@
+{
+  "name": "sample-module",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "module:check": "module-check ."
+  },
+  "devDependencies": {
+    "module-sdk": "github:takan003/module-sdk"
+  }
+}
